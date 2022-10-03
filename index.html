@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fiesta Ideal</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1/css/bootstrap.min.css">
+</head>
+
+<body class="text-center">
+    <h1 class="mt-5">Cómo Sería tu Fiesta Ideal?</h1>
+
+    <h4 class="mt-4">Para saberlo, te haremos algunas preguntas, y al final te daremos tus resultados</h4>
+
+    <div class="col-8 offset-2 container mt-5">
+        <div class="mt-4">
+            <h6>¿En qué lugar será la fiesta?</h6>
+
+            <div class="row">
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="lugar-casa" name="lugar" checked>
+                    <label for="lugar-casa">Una casa</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="lugar-salon" name="lugar">
+                    <label for="lugar-salon">Salón privado</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="lugar-libre" name="lugar">
+                    <label for="lugar-libre">Al aire libre</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h6>¿Cuántas personas asistirán?</h6>
+
+            <div class="row col-10 offset-1">
+                <label class="col-6 text-start">5</label>
+                <label class="col-6 text-end">50</label>
+
+                <input class="form-range" id="personas-rango" type="range" min="5" max="50" step="1">
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h6>¿Qué bebidas quieres que haya?</h6>
+
+            <div class="row">
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="bebida-refresco" name="bebida" onchange="$('#opciones-alcohol').css('display', 'none');" checked>
+                    <label for="bebida-refresco">Refresco</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="bebida-alcohol" name="bebida" onchange="$('#opciones-alcohol').css('display', 'block');">
+                    <label for="bebida-alcohol">Alcohol</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="bebida-agua" name="bebida" onchange="$('#opciones-alcohol').css('display', 'none');">
+                    <label for="bebida-agua">Agua</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4" id="opciones-alcohol" style="display: none;">
+            <h6>¿Qué tipo de bebidas alcohólicas te gustan más?</h6>
+
+            <div class="row">
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" id="alcohol-vodka" name="alcohol" checked>
+                    <label for="alcohol-vodka">Vodka</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" id="alcohol-tequila" name="alcohol" checked>
+                    <label for="alcohol-tequila">Tequila</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" id="alcohol-whiskey" name="alcohol" checked>
+                    <label for="alcohol-whiskey">Whiskey</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" id="alcohol-mezcal" name="alcohol" checked>
+                    <label for="alcohol-mezcal">Mezcal</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h6>¿Qué tipo de alimentos te gustaría que hubieran?</h6>
+
+            <div class="row">
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="alimento-carne" name="alimento" checked>
+                    <label for="alimento-carne">Carne asada</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="alimento-guisado" name="alimento">
+                    <label for="alimento-guisado">Guisado</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="alimento-rapida" name="alimento">
+                    <label for="alimento-rapida">Comida rápida</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h6>¿Qué música te gustaría escuchar?</h6>
+
+            <div class="row">
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="musica-salsa" name="musica" checked>
+                    <label for="musica-salsa">Salsa y cumbia</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="musica-banda" name="musica">
+                    <label for="musica-banda">Banda</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="musica-perreo" name="musica">
+                    <label for="musica-perreo">Perreo</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h6>¿Que tipo de ambiente prefieres?</h6>
+
+            <div class="row">
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="ambiente-formal" name="ambiente" checked>
+                    <label for="ambiente-formal">Formal</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="ambiente-sano" name="ambiente">
+                    <label for="ambiente-sano">Convivencia sana con familiares y amigos</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="ambiente-destructivo" name="ambiente">
+                    <label for="ambiente-destructivo">Destructivo con los reales</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h6>¿Qué temática prefieres?</h6>
+
+            <div class="row">
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="tema-buchon" name="tema" checked>
+                    <label for="tema-buchon">Buchon</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="tema-neon" name="tema">
+                    <label for="tema-neon">Neon</label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="tema-bellaka" name="tema">
+                    <label for="tema-bellaka">Bellaka</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h6>¿?</h6>
+
+            <div class="row">
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="" name="" checked>
+                    <label for=""></label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="" name="">
+                    <label for=""></label>
+                </div>
+
+                <div class="col">
+                    <input class="form-check-input" type="radio" id="" name="">
+                    <label for=""></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script>
+    </script>
+</body>
+
+</html>
