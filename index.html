@@ -17,344 +17,334 @@
 <body class="text-center">
     <h1 class="mt-5">Cómo Sería tu Fiesta Ideal?</h1>
 
-    <h4 class="mt-4">Para saberlo, te haremos algunas preguntas, y al final te daremos tus resultados</h4>
+    <div id="div-preguntas">
+        <h4 class="mt-4">Para saberlo, te haremos algunas preguntas, y al final te daremos tus resultados</h4>
 
-    <div class="col-8 offset-2 container mt-5">
-        <div class="mt-4">
-            <h6>¿En qué lugar será la fiesta?</h6>
+        <div class="col-8 offset-2 container mt-5">
+            <div class="mt-4">
+                <h6>¿En qué lugar será la fiesta?</h6>
 
-            <div class="row">
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="lugar-casa" name="lugar" checked>
-                    <label for="lugar-casa">Una casa</label>
-                </div>
+                <div class="row">
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="lugar-casa" name="lugar" checked>
+                        <label for="lugar-casa">Una casa</label>
+                    </div>
 
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="lugar-salon" name="lugar">
-                    <label for="lugar-salon">Salón privado</label>
-                </div>
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="lugar-salon" name="lugar">
+                        <label for="lugar-salon">Salón privado</label>
+                    </div>
 
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="lugar-libre" name="lugar">
-                    <label for="lugar-libre">Al aire libre</label>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-4">
-            <h6>¿Cuántas personas asistirán?</h6>
-
-            <div class="row col-10 offset-1">
-                <label class="col-6 text-start">5</label>
-                <label class="col-6 text-end">50</label>
-
-                <input class="form-range" id="personas-rango" type="range" min="5" max="50" step="1">
-            </div>
-        </div>
-
-        <div class="mt-4">
-            <h6>¿Qué bebidas quieres que haya?</h6>
-
-            <div class="row">
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="bebida-refresco" name="bebida" onchange="$('#opciones-alcohol').addClass('d-none');" checked>
-                    <label for="bebida-refresco">Refresco</label>
-                </div>
-
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="bebida-alcohol" name="bebida" onchange="$('#opciones-alcohol').removeClass('d-none');">
-                    <label for="bebida-alcohol">Alcohol</label>
-                </div>
-
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="bebida-agua" name="bebida" onchange="$('#opciones-alcohol').addClass('d-none');">
-                    <label for="bebida-agua">Agua</label>
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="lugar-libre" name="lugar">
+                        <label for="lugar-libre">Al aire libre</label>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="mt-4 d-none" id="opciones-alcohol">
-            <h6>¿Qué tipo de bebidas alcohólicas te gustan más?</h6>
+            <div class="mt-4">
+                <h6>¿Cuántas personas asistirán?</h6>
 
-            <div class="row">
-                <div class="col">
-                    <input class="form-check-input" type="checkbox" id="alcohol-vodka" name="alcohol" checked>
-                    <label for="alcohol-vodka">Vodka</label>
-                </div>
+                <div class="row col-10 offset-1">
+                    <label class="col-6 text-start">5</label>
+                    <label class="col-6 text-end">50</label>
 
-                <div class="col">
-                    <input class="form-check-input" type="checkbox" id="alcohol-tequila" name="alcohol" checked>
-                    <label for="alcohol-tequila">Tequila</label>
-                </div>
-
-                <div class="col">
-                    <input class="form-check-input" type="checkbox" id="alcohol-whiskey" name="alcohol" checked>
-                    <label for="alcohol-whiskey">Whiskey</label>
-                </div>
-
-                <div class="col">
-                    <input class="form-check-input" type="checkbox" id="alcohol-mezcal" name="alcohol" checked>
-                    <label for="alcohol-mezcal">Mezcal</label>
+                    <input class="form-range" id="personas-rango" type="range" min="5" max="50" step="1">
                 </div>
             </div>
-        </div>
 
-        <div class="mt-4">
-            <h6>¿Qué tipo de alimentos te gustaría que hubieran?</h6>
+            <div class="mt-4">
+                <h6>¿Qué bebidas quieres que haya?</h6>
 
-            <div class="row">
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="alimento-carne" name="alimento" checked>
-                    <label for="alimento-carne">Carne asada</label>
-                </div>
+                <div class="row">
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="bebida-refresco" name="bebida" onchange="$('#opciones-alcohol').addClass('d-none');" checked>
+                        <label for="bebida-refresco">Refresco</label>
+                    </div>
 
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="alimento-guisado" name="alimento">
-                    <label for="alimento-guisado">Guisado</label>
-                </div>
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="bebida-alcohol" name="bebida" onchange="$('#opciones-alcohol').removeClass('d-none');">
+                        <label for="bebida-alcohol">Alcohol</label>
+                    </div>
 
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="alimento-rapida" name="alimento">
-                    <label for="alimento-rapida">Comida rápida</label>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-4">
-            <h6>¿Qué música te gustaría escuchar?</h6>
-
-            <div class="row">
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="musica-salsa" name="musica" checked>
-                    <label for="musica-salsa">Salsa y cumbia</label>
-                </div>
-
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="musica-banda" name="musica">
-                    <label for="musica-banda">Banda</label>
-                </div>
-
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="musica-perreo" name="musica">
-                    <label for="musica-perreo">Perreo</label>
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="bebida-agua" name="bebida" onchange="$('#opciones-alcohol').addClass('d-none');">
+                        <label for="bebida-agua">Agua</label>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="mt-4">
-            <h6>¿Que tipo de ambiente prefieres?</h6>
+            <div class="mt-4 d-none" id="opciones-alcohol">
+                <h6>¿Qué tipo de bebidas alcohólicas te gustan más?</h6>
 
-            <div class="row">
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="ambiente-formal" name="ambiente" checked>
-                    <label for="ambiente-formal">Formal</label>
-                </div>
+                <div class="row">
+                    <div class="col">
+                        <input class="form-check-input" type="checkbox" id="alcohol-vodka" name="alcohol" checked>
+                        <label for="alcohol-vodka">Vodka</label>
+                    </div>
 
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="ambiente-sano" name="ambiente">
-                    <label for="ambiente-sano">Convivencia sana con familiares y amigos</label>
-                </div>
+                    <div class="col">
+                        <input class="form-check-input" type="checkbox" id="alcohol-tequila" name="alcohol" checked>
+                        <label for="alcohol-tequila">Tequila</label>
+                    </div>
 
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="ambiente-destructivo" name="ambiente">
-                    <label for="ambiente-destructivo">Destructivo con los reales</label>
-                </div>
-            </div>
-        </div>
+                    <div class="col">
+                        <input class="form-check-input" type="checkbox" id="alcohol-whiskey" name="alcohol" checked>
+                        <label for="alcohol-whiskey">Whiskey</label>
+                    </div>
 
-        <div class="mt-4">
-            <h6>¿Qué temática prefieres?</h6>
-
-            <div class="row">
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="tema-buchon" name="tema" checked>
-                    <label for="tema-buchon">Buchon</label>
-                </div>
-
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="tema-neon" name="tema">
-                    <label for="tema-neon">Neon</label>
-                </div>
-
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="tema-bellaka" name="tema">
-                    <label for="tema-bellaka">Bellaka</label>
+                    <div class="col">
+                        <input class="form-check-input" type="checkbox" id="alcohol-mezcal" name="alcohol" checked>
+                        <label for="alcohol-mezcal">Mezcal</label>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- <div class="mt-4">
-            <h6>¿?</h6>
+            <div class="mt-4">
+                <h6>¿Qué tipo de alimentos te gustaría que hubieran?</h6>
 
-            <div class="row">
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="" name="" checked>
-                    <label for=""></label>
-                </div>
+                <div class="row">
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="alimento-carne" name="alimento" checked>
+                        <label for="alimento-carne">Carne asada</label>
+                    </div>
 
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="" name="">
-                    <label for=""></label>
-                </div>
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="alimento-guisado" name="alimento">
+                        <label for="alimento-guisado">Guisado</label>
+                    </div>
 
-                <div class="col">
-                    <input class="form-check-input" type="radio" id="" name="">
-                    <label for=""></label>
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="alimento-rapida" name="alimento">
+                        <label for="alimento-rapida">Comida rápida</label>
+                    </div>
                 </div>
             </div>
-        </div> -->
 
-        <div class="mt-4">
-            <button class="col-5 btn btn-primary" onclick="resultados();">Enviar</button>
+            <div class="mt-4">
+                <h6>¿Qué música te gustaría escuchar?</h6>
+
+                <div class="row">
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="musica-salsa" name="musica" checked>
+                        <label for="musica-salsa">Salsa y cumbia</label>
+                    </div>
+
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="musica-banda" name="musica">
+                        <label for="musica-banda">Banda</label>
+                    </div>
+
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="musica-perreo" name="musica">
+                        <label for="musica-perreo">Perreo</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <h6>¿Que tipo de ambiente prefieres?</h6>
+
+                <div class="row">
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="ambiente-formal" name="ambiente" checked>
+                        <label for="ambiente-formal">Formal</label>
+                    </div>
+
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="ambiente-sano" name="ambiente">
+                        <label for="ambiente-sano">Convivencia sana con familiares y amigos</label>
+                    </div>
+
+                    <div class="col">
+                        <input class="form-check-input" type="radio" id="ambiente-destructivo" name="ambiente">
+                        <label for="ambiente-destructivo">Destructivo con los reales</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 mb-5">
+                <button class="col-5 btn btn-primary" onclick="resultados();">Enviar</button>
+            </div>
         </div>
     </div>
 
-    <div class="col-8 offset-2 container mt-5">
-        <h2>Tus Resultados</h2>
+    <div class="d-none" id="div-resultados">
+        <div class="col-8 offset-2 container mt-5">
+            <h2>Tus Resultados</h2>
 
-        <div class="mt-4">
-            <h6>La fiesta será en: <span id="respuesta-lugar"></span></h6>
+            <div class="mt-4">
+                <h6>La fiesta será en: <span id="respuesta-lugar"></span></h6>
 
-            <p id="mensaje-lugar"></p>
-        </div>
-
-        <div class="mt-4">
-            <h6>Asisitirán <span id="respuesta-personas"></span> personas</h6>
-
-            <p id="mensaje-personas"></p>
-        </div>
-
-        <div class="mt-4">
-            <h6>Los invitados tomarán: <span id="respuesta-bebida"></span></h6>
-
-            <p id="mensaje-bebida"></p>
-        </div>
-
-        <div class="row mt-4 d-none" id="recomendaciones-alcohol">
-            <h6>Si tomarán alcohol, te recomendamos:</h6>
-
-            <div class="col" id="recom-alcohol-vodka">
-                <dl>
-                    <dt>Vodka</dt>
-
-                    <dd>Oso negro</dd>
-                    <dd>Zaverich</dd>
-                    <dd>Absolut</dd>
-                    <dd>Grey goose</dd>
-                    <dd>Smirnoff</dd>
-                </dl>
+                <p id="mensaje-lugar"></p>
             </div>
 
-            <div class="col" id="recom-alcohol-tequila">
-                <dl>
-                    <dt>Tequila</dt>
+            <div class="mt-4">
+                <h6>Asisitirán <span id="respuesta-personas"></span> personas</h6>
 
-                    <dd>Azul</dd>
-                    <dd>Don julio 70</dd>
-                    <dd>José cuervo especial</dd>
-                    <dd>Don Ramón</dd>
-                    <dd>1800</dd>
-                </dl>
+                <p id="mensaje-personas"></p>
             </div>
 
-            <div class="col" id="recom-alcohol-whiskey">
-                <dl>
-                    <dt>Whiskey</dt>
+            <div class="mt-4">
+                <h6>Los invitados tomarán: <span id="respuesta-bebida"></span></h6>
 
-                    <dd>Red Label</dd>
-                    <dd>William lawson\s</dd>
-                    <dd>Jack Daniels</dd>
-                    <dd>Passport scotch</dd>
-                    <dd>Chivas Regal</dd>
-                </dl>
+                <p id="mensaje-bebida"></p>
             </div>
 
-            <div class="col" id="recom-alcohol-mezcal">
-                <dl>
-                    <dt>Mezcal</dt>
+            <div class="row mt-4 d-none" id="recomendaciones-alcohol">
+                <h6>Si tomarán alcohol, te recomendamos:</h6>
 
-                    <dd>400 Conejos</dd>
-                    <dd>Montelobos</dd>
-                    <dd>Unión</dd>
-                    <dd>Mitre</dd>
-                    <dd>Señorío</dd>
-                </dl>
+                <div class="col" id="recom-alcohol-vodka">
+                    <dl>
+                        <dt>Vodka</dt>
+
+                        <dd>Oso negro</dd>
+                        <dd>Zaverich</dd>
+                        <dd>Absolut</dd>
+                        <dd>Grey goose</dd>
+                        <dd>Smirnoff</dd>
+                    </dl>
+                </div>
+
+                <div class="col" id="recom-alcohol-tequila">
+                    <dl>
+                        <dt>Tequila</dt>
+
+                        <dd>Azul</dd>
+                        <dd>Don julio 70</dd>
+                        <dd>José cuervo especial</dd>
+                        <dd>Don Ramón</dd>
+                        <dd>1800</dd>
+                    </dl>
+                </div>
+
+                <div class="col" id="recom-alcohol-whiskey">
+                    <dl>
+                        <dt>Whiskey</dt>
+
+                        <dd>Red Label</dd>
+                        <dd>William lawson\s</dd>
+                        <dd>Jack Daniels</dd>
+                        <dd>Passport scotch</dd>
+                        <dd>Chivas Regal</dd>
+                    </dl>
+                </div>
+
+                <div class="col" id="recom-alcohol-mezcal">
+                    <dl>
+                        <dt>Mezcal</dt>
+
+                        <dd>400 Conejos</dd>
+                        <dd>Montelobos</dd>
+                        <dd>Unión</dd>
+                        <dd>Mitre</dd>
+                        <dd>Señorío</dd>
+                    </dl>
+                </div>
             </div>
-        </div>
 
-        <div class="mt-4">
-            <h6>Se comerá: <span id="respuesta-alimento"></span></h6>
+            <div class="mt-4">
+                <h6>Se comerá: <span id="respuesta-alimento"></span></h6>
 
-            <p><span id="mensaje-alimento"></span>. Te recomendamos llevar:</p>
+                <p><span id="mensaje-alimento"></span>. Te recomendamos llevar:</p>
 
-            <div class="d-none" id="recom-alimento-carne">
-                <dl>
-                    <dt>Carne asada</dt>
+                <div class="d-none" id="recom-alimento-carne">
+                    <dl>
+                        <dt>Carne asada</dt>
 
-                    <dd>Bistec</dd>
-                    <dd>Longaniza</dd>
-                    <dd>Nopales</dd>
-                    <dd>Cebollas </dd>
-                    <dd>Queso</dd>
-                </dl>
+                        <dd>Bistec</dd>
+                        <dd>Longaniza</dd>
+                        <dd>Nopales</dd>
+                        <dd>Cebollas </dd>
+                        <dd>Queso</dd>
+                    </dl>
+                </div>
+
+                <div class="d-none" id="recom-alimento-guisado">
+                    <dl>
+                        <dt>Guisado</dt>
+
+                        <dd>Picadillo</dd>
+                        <dd>Arroz</dd>
+                        <dd>Chicharrón en salsa verde</dd>
+                        <dd>Frijoles</dd>
+                        <dd>Bistec con nopales</dd>
+                    </dl>
+                </div>
+
+                <div class="d-none" id="recom-alimento-rapida">
+                    <dl>
+                        <dt>Comida rápida</dt>
+
+                        <dd>Tacos </dd>
+                        <dd>Pizza </dd>
+                        <dd>Hamburguesas</dd>
+                        <dd>Hot dog </dd>
+                        <dd>Alitas</dd>
+                    </dl>
+                </div>
             </div>
 
-            <div class="d-none" id="recom-alimento-guisado">
-                <dl>
-                    <dt>Guisado</dt>
+            <div class="mt-4">
+                <h6>Estará sonando: <span id="respuesta-musica"></span></h6>
 
-                    <dd>Picadillo</dd>
-                    <dd>Arroz</dd>
-                    <dd>Chicharrón en salsa verde</dd>
-                    <dd>Frijoles</dd>
-                    <dd>Bistec con nopales</dd>
-                </dl>
+                <p><span id="mensaje-musica"></span>. Te recomendamos:</p>
+
+                <div class="d-none" id="recom-musica-salsa">
+                    <dl>
+                        <dt>Salsa y cumbia</dt>
+
+                        <dd>Oye mujer - raymix </dd>
+                        <dd>Mujer prohibida - cumbia ecuatoriana</dd>
+                        <dd>Sonido la Changa</dd>
+                    </dl>
+                </div>
+
+                <div class="d-none" id="recom-musica-banda">
+                    <dl>
+                        <dt>Banda</dt>
+
+                        <dd>Cerrando ciclos - banda MS </dd>
+                        <dd>Ya te supere - grupo firme</dd>
+                        <dd>Mi último deseo - banda los Recoditos</dd>
+                        <dd>A mí también me vale - banda MS</dd>
+                        <dd>Ya no vuelvo contigo - grupo firme</dd>
+                    </dl>
+                </div>
+
+                <div class="d-none" id="recom-musica-perreo">
+                    <dl>
+                        <dt>Perreo</dt>
+
+                        <dd>Métele - alu mix & ranking stone </dd>
+                        <dd>Guatauba - plan b </dd>
+                        <dd>Dominicana - tego Calderón</dd>
+                        <dd>El teléfono - Héctor bambino </dd>
+                        <dd>Si baja - uzielito mix</dd>
+                    </dl>
+                </div>
             </div>
 
-            <div class="d-none" id="recom-alimento-rapida">
-                <dl>
-                    <dt>Comida rápida</dt>
+            <div class="mt-4">
+                <h6>El ambiente será: <span id="respuesta-ambiente"></span></h6>
 
-                    <dd>Tacos </dd>
-                    <dd>Pizza </dd>
-                    <dd>Hamburguesas</dd>
-                    <dd>Hot dog </dd>
-                    <dd>Alitas</dd>
-                </dl>
+                <p id="mensaje-ambiente"></p>
             </div>
-        </div>
 
-        <div class="mt-4">
-            <h6>: <span id="respuesta-"></span></h6>
-
-            <p id="mensaje-"></p>
+            <div class="mt-4 mb-5">
+                <button class="col-5 btn btn-primary" onclick="regresar();">Regresar</button>
+            </div>
         </div>
     </div>
-
-    <textarea name="test" id="test" cols="30" rows="10"></textarea>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <script>
-        function formatear() {
-            let lineas = $('#test').val().split('\n');
-
-            let texto = '';
-
-            for (lin of lineas) {
-                texto += '<dd>' + lin.replaceAll('\'', '').replaceAll(',', '') + '</dd>\n';
-            }
-
-            console.log(texto);
-        }
-
-        formatear();
-
         let mensajes = {
             'lugar': [
-                'Solo sean cuidadosos con las cosas.',
-                'Aunque recomendamos una casa, también es buena opción.',
-                'Excelente elección, más espacio, más invitados.'
+                'Ten cuidado de no romper el lavabo, se cuidadoso',
+                'Ten cuidado de no vomitarte porque tu no limpias',
+                'Mide tu limite, no te excedas'
             ],
             'personas': [
                 'Ay pobre, no tiene amigos.',
@@ -371,6 +361,16 @@
                 'Se tiene que hacer la carnita asada',
                 'Un guisadito de tu jefesita',
                 'Pidete el Uber Eats'
+            ],
+            'musica': [
+                'Sacate los prohibidos',
+                'Puros corridos belikos ',
+                'La autoestima hasta el cielo y el perreo hasta el suelo'
+            ],
+            'ambiente': [
+                'Esperate a la misa el domingo',
+                'Mejor no invites a nadie',
+                'Entre más corriente más ambiente'
             ]
         };
 
@@ -379,7 +379,9 @@
                 'lugar',
                 'personas',
                 'bebida',
-                'alimento'
+                'alimento',
+                'musica',
+                'ambiente'
             ]
 
             for (preg of preguntas) {
@@ -418,14 +420,30 @@
                             }
                         }
 
-                        // console.log(respuesta.id);
+                        break;
+                    case 'musica':
+                        for (musica of $('[id|=recom-musica]')) {
+                            if (('recom-' + respuesta.id) == musica.id) {
+                                musica.classList = '';
+                            } else {
+                                musica.classList = 'd-none';
+                            }
+                        }
+
                         break;
                 }
-
 
                 $('#respuesta-' + preg).text(respuesta.respuesta);
                 $('#mensaje-' + preg).text(mensajes[preg][respuesta.indice]);
             }
+
+            $('#div-preguntas').addClass('d-none');
+            $('#div-resultados').removeClass('d-none');
+        }
+
+        function regresar() {
+            $('#div-resultados').addClass('d-none');
+            $('#div-preguntas').removeClass('d-none');
         }
 
         function radioSeleccionado(name) {
